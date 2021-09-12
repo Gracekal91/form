@@ -1,0 +1,69 @@
+//APP.JS
+
+
+
+
+//MAIN
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+}
+//FORM
+.formControl{
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .formControlGroup{
+        position: relative;
+    }
+    .formInput{
+        width: 86%;
+        padding: .5rem 1.5rem;
+        margin: .5rem 0;
+        z-index: 10;
+    }
+   
+    .formLabel{
+        position: absolute;
+        top: 2.2rem;
+        left: 1rem;
+        color:gray;
+        background-color: #fff;
+        padding: 0 .5rem;
+        font-size: .8rem;
+        transition: ease-in .2s;
+    }
+    .showFormLabel{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color:gray;
+        background-color: #fff;
+        padding: 0 .5rem;
+        transition: ease-in .2s;
+    }
+    .formButton{
+        width: 100%;
+        padding: .5rem .3rem;
+        background: rgb(19, 93, 255);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+//SIDE
+.side{
+    background: rgb(75, 115, 247);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}

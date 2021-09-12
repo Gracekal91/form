@@ -1,0 +1,82 @@
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+
+.formControl {
+  width: 45%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formControl .formControlGroup {
+  position: relative;
+}
+
+.formControl .formInput {
+  width: 86%;
+  padding: .5rem 1.5rem;
+  margin: .5rem 0;
+  z-index: 10;
+}
+
+.formControl .formLabel {
+  position: absolute;
+  top: 2.2rem;
+  left: 1rem;
+  color: gray;
+  background-color: #fff;
+  padding: 0 .5rem;
+  font-size: .8rem;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.formControl .showFormLabel {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: gray;
+  background-color: #fff;
+  padding: 0 .5rem;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.formControl .formButton {
+  width: 100%;
+  padding: .5rem .3rem;
+  background: #135dff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.side {
+  background: #4b73f7;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2rem;
+}
+/*# sourceMappingURL=App.css.map */
