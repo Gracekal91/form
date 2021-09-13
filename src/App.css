@@ -55,13 +55,48 @@
   transition: ease-in .2s;
 }
 
+.formControl .formInputIcon {
+  margin-left: -2.4rem;
+  margin-bottom: -.2rem;
+  cursor: pointer;
+}
+
 .formControl .formButton {
   width: 100%;
   padding: .5rem .3rem;
-  background: #135dff;
+  margin-top: .5rem;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.formControl .btnDisabled {
+  background: gray;
+}
+
+.formControl .btnEnabled {
+  background: #135dff;
+}
+
+.formControl .fieldCont {
+  font-size: .8rem;
+  display: none;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.formControl .error {
+  color: red;
+  display: block;
+  font-size: .8rem;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.formControl .inputError {
+  border: red 1px solid;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 
 .side {
@@ -78,5 +113,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 2rem;
+}
+
+input {
+  outline: none;
 }
 /*# sourceMappingURL=App.css.map */
