@@ -1,108 +1,146 @@
+// $VARIABLES
+$base-color: rgba(128, 128, 128, 0.974);
+
 //APP.JS
-
-
+.app {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 //MAIN
-.main{
+.main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     height: 100vh;
+    @media screen and(max-width: 760px){
+        grid-template-columns: 1fr;
+    }
 }
 //FORM
-.formControl{
+.formControl {
     width: 45%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .formControlGroup{
+    .formSubtitle {
+        color: gray;
+        font-size: 0.8rem;
+    }
+    .formControlGroup {
         position: relative;
+        margin-bottom: 0.5rem;
     }
-    .formInput{
+    .formInput {
         width: 86%;
-        padding: .5rem 1.5rem;
-        margin: .5rem 0;
+        padding: 0.7rem 1.5rem;
+        margin: 0.5rem 0;
         z-index: 10;
+        border: 1px solid rgba(128, 128, 128, 0.282);
+        color: $base-color;
+        @media screen and(max-width: 900px){
+            width: 80%;
+        }
     }
-   
-    .formLabel{
+
+    .formLabel {
         position: absolute;
-        top: 2.2rem;
+        top: 2.4rem;
         left: 1rem;
-        color:gray;
+        color: $base-color;
         background-color: #fff;
-        padding: 0 .5rem;
-        font-size: .8rem;
-        transition: ease-in .2s;
+        padding: 0 0.5rem;
+        font-size: 0.8rem;
+        transition: ease-in 0.2s;
     }
-    .showFormLabel{
+    .showFormLabel {
         position: absolute;
         top: 1rem;
         left: 1rem;
-        color:gray;
+        color: $base-color;
         background-color: #fff;
-        padding: 0 .5rem;
-        transition: ease-in .2s;
+        padding: 0 0.5rem;
+        transition: ease-in 0.2s;
     }
-    .formInputIcon{
-        margin-left: -2.4rem; 
-        margin-bottom: -.2rem; 
+    .formInputIcon {
+        margin-left: -2.4rem;
+        margin-bottom: -.2rem;
         cursor: pointer;
     }
-    .formButton{
+    .formButton {
         width: 100%;
-        padding: .5rem .3rem;
-        margin-top: .5rem;
+        padding: 0.7rem 0.3rem;
+        margin-top: 1.5rem;
         color: white;
         border: none;
         cursor: pointer;
+        border-radius: 4px;
+        @media screen and(max-width: 1085px){
+            width: 100%;
+        }
     }
-    .btnDisabled{
-        background: gray;
+    .btnDisabled {
+        background: rgba(128, 128, 128, 0.316);
+        color: rgba(0, 0, 0, 0.316);
+        cursor: not-allowed;
     }
-    .btnEnabled{
+    .btnEnabled {
         background: rgb(19, 93, 255);
     }
-    
+
     //Error Message Styles
-    .fieldCont{
-        font-size: .8rem;
+    .fieldCont {
+        font-size: 0.8rem;
         display: none;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
     }
-    
-    .error{
+
+    .error {
         color: red;
         display: block;
-        font-size: .8rem;
-        transition: .2s ease-in;
+        font-size: 0.8rem;
+        transition: 0.2s ease-in;
     }
-    
-    .inputError{
+
+    .inputError {
         border: red 1px solid;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
     }
-      
+
 }
 
-
-
 //SIDE
-.side{
+.side {
     background: rgb(75, 115, 247);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem;
+    @media screen and(max-width: 760px){
+        margin-top: 1.5rem;
+    }
 }
-
 
 //General
 
-input{
+input,
+select {
     outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.282);
+    border: 4px;
 }
 
+select {
+    width: 100% !important;
+    padding: 0.7rem 1.5rem;
+    margin: 0.5rem 0;
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.282);
+    color: $base-color;
+    > option {
+        color: $base-color;
+        margin: 3rem 1.5rem;
 
+    }
+}
